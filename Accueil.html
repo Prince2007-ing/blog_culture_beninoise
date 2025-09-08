@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+  <meta charset="UTF-8">
+  <title>Accueil</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+  <header>
+     <h1>Bienvenue sur notre site</h1>
+    <div class="logo">Robbie Lens</div>
+    <button class="menu-toggle" onclick="toggleMenu()">☰</button>
+    <nav class="navigation">
+      <a href="Accueil.html">Accueil</a>
+      <a href="Gastronomie.html">Gastronomie</a>
+      <a href="Infrastructures.html">Infrastructure</a>
+      <a href="Startups.html">Startups</a>
+      <a href="Tourisme_Histoire.html">Tourisme/Histoire</a>
+      <a href="Contact.html">Contact</a>
+      <a href="A_propos.html">À propos</a>
+    </nav>
+  </header>
+  <main>
+    <section>
+      <h2>Présentation générale</h2>
+      <p>Découvrez notre univers à travers les différentes thématiques proposées.</p>
+    </section>
+  </main>
+  <footer>
+    <p>&copy; 2025 - Tous droits réservés</p>
+  </footer>
+  <script>
+  function toggleMenu() {
+    const nav = document.querySelector('.navigation');
+    nav.classList.toggle('show');
+}
+</script>
+</body>
+</html>

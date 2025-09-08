@@ -1,0 +1,162 @@
+css
+/* ======= RESET ======= */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+/* ======= BODY ======= */
+body {
+  font-family: 'Segoe UI', sans-serif;
+  background-color: #f9f9f9;
+  color: #333;
+  line-height: 1.6;
+  padding: 0 20px;
+}
+
+/* ======= HEADER ======= */
+header {
+  background-color: #007bff;
+  color: white;
+  padding: 20px 0;
+  text-align: center;
+}
+
+header h1 {
+  margin-bottom: 10px;
+  font-size: 28px;
+}
+
+nav {
+  display: flex;
+  justify-content: center;
+  flex-wrap: wrap;
+  gap: 15px;
+}
+
+nav a {
+  color: white;
+  text-decoration: none;
+  font-weight: bold;
+  padding: 8px 12px;
+  border-radius: 4px;
+  transition: background-color 0.3s ease;
+}
+
+nav a:hover {
+  background-color: #0056b3;
+}
+
+/* ======= MAIN ======= */
+main {
+  max-width: 1000px;
+  margin: 30px auto;
+  padding: 20px;
+  background-color: white;
+  border-radius: 8px;
+  box-shadow: 0 0 10px rgba(0,0,0,0.05);
+}
+
+main h2 {
+  margin-bottom: 15px;
+  color: #007bff;
+}
+
+main p {
+  margin-bottom: 10px;
+}
+
+/* ======= FORMULAIRES ======= */
+form {
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+}
+
+input, textarea, button {
+  padding: 10px;
+  border: 1px solid #ccc;
+  border-radius: 4px;
+}
+
+button {
+  background-color: #007bff;
+  color: white;
+  border: none;
+  cursor: pointer;
+}
+
+button:hover {
+  background-color: #0056b3;
+}
+
+/* ======= FOOTER ======= */
+footer {
+  text-align: center;
+  padding: 20px;
+  background-color: #eee;
+  margin-top: 40px;
+  font-size: 14px;
+}
+
+/* ======= RESPONSIVE ======= */
+@media (max-width: 600px) {
+  nav {
+    flex-direction: column;
+    align-items: center;
+}
+
+  main {
+    padding: 15px;
+}
+}
+
+
+/* Menu toggle button */
+.menu-toggle {
+  display: none;
+  font-size: 28px;
+  background: none;
+  border: none;
+  color: white;
+  cursor: pointer;
+}
+
+/* Navigation par défaut */
+.navigation {
+  display: flex;
+  gap: 15px;
+}
+
+/* Responsive menu */
+@media (max-width: 768px) {
+.menu-toggle {
+    display: block;
+    position: absolute;
+    top: 20px;
+    right: 20px;
+}
+.navigation {
+    display: none;
+    flex-direction: column;
+    background-color: #007bff;
+    position: absolute;
+    top: 60px;
+    right: 20px;
+    padding: 10px;
+    border-radius: 8px;
+}
+
+.navigation.show {
+    display: flex;
+}
+
+  nav a {
+    color: white;
+    padding: 10px;
+    border-bottom: 1px solid rgba(255,255,255,0.2);
+}
+}
+
+
