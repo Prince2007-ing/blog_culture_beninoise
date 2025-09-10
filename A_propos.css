@@ -1,0 +1,14 @@
+.section-apropos {
+  background: #e8f5e9;
+  padding: 30px;
+  border-radius: 8px;
+}
+
+.section-apropos h2 {
+  color: #2e7d32;
+  margin-bottom: 15px;
+}
+
+.section-apropos p {
+  text-align: justify;
+}

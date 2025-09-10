@@ -3,8 +3,12 @@
 <head>
   <meta charset="UTF-8">
   <title>Accueil</title>
-  <link rel="stylesheet" href="style.css">
-  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+  <link rel="stylesheet" href="principal.css">
+  <link rel="stylesheet" href="Accueil.css">
+  <link href="https://fonts.googleapis.com/css2?family=Manrope&family=Montserrat&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css">
+
+
 
 </head>
 
@@ -27,110 +31,34 @@
     </nav>
   </header>
   <main>
-    <section>
+    <section class="image-section">
+      <div class="texte-content">
       <h2>Présentation générale</h2>
-      <p>Découvrez notre univers à travers les différentes thématiques proposées.</p>
+      <p class="taille_ecriture">
+        ✨ <em>Bienvenue chez vous, au cœur du Bénin !</em> <br>
+        Plongez dans un univers où <strong> tradition et modernité </strong>se rencontrent. Ici,
+        chaque page est une invitation à explorer un pays riche en saveurs, en 
+        histoire et en innovations. Laissez-vous guider par l’esprit <strong>Benintôché</strong>
+        et découvrez un Bénin qui bouge, qui inspire et qui rayonne. 
+        Découvrez notre univers à travers les différentes thématiques proposées : 
+        sa gastronomie, ses startups, ses infrastructures, son histoire et son dynamisme moderne.
+      </p>
+      </div>
+      <div class="image-container">
+        <img src="images/vue_litoral.jpg" alt="imageq"> <br> <br> <br>
+        <img src="images/Startups.jpg" alt="imageq"><br> <br> <br>
+        
+
+      </div>
+    
     </section>
 
-<!-- Fenêtre modale 
-<div id="form-connexion" class="modal">
-  <div class="modal-content">
-    <a href="#" class="btn-close">✖</a> 
-    <h2>Connexion</h2>
-    <form action="/login" method="POST">
-      <label for="email">Email :</label>
-      <input type="email" id="email" name="email" required>
-
-      <label for="password">Mot de passe :</label>
-      <input type="password" id="password" name="password" required>
-
-      <button type="submit">Connexion</button>
-    </form>
-  </div>
-
-
-
-
-<div class="tab-container">
-  <div class="tabs">
-    <a href="#login" class="tab">SE CONNECTER</a>
-    <a href="#signup" class="tab">S'INSCRIRE</a>
-  </div>
-
-  <div id="login" class="tab-content">
-    <h3>Connexion</h3>
-    <form action="/login" method="POST">
-      <label>Email:</label>
-      <input type="email" name="email" required>
-      <label>Mot de passe:</label>
-      <input type="password" name="password" required>
-      <button type="submit">Se connecter</button>
-      <a href="#" class="forgot-password">Mot de passe oublié?</a>
-    </form>
-  </div>
-
-  <div id="signup" class="tab-content">
-    <h3>Inscription</h3>
-    <form action="/register" method="POST">
-      <label>Nom complet:</label>
-      <input type="text" name="fullname" required>
-      <label>Email:</label>
-      <input type="email" name="email" required>
-      <label>Mot de passe:</label>
-      <input type="password" name="password" required>
-      <button type="submit">S'inscrire</button>
-
-      <div class="alt-login">
-      <p>Ou continuer avec</p>
-      <button type="button" class="btn-google">Google</button>
-    </div>
-    </form>
-
-  </div>
-</div>
-
-
-
-
-
-
-
-
-
-
-<section id="form-connexion">
-  <h2>Connexion</h2>
-  <form action="/login" method="POST">
-    <label for="email">Email:</label>
-    <input type="email" id="email" name="email" required>
-
-    <label for="password">Mot de passe:</label>
-    <input type="password" id="password" name="password" required>
-
-    <button type="submit">Connexion</button>
-        <a href="#" class="forgot-password">Mot de passe oublié?</a>
-
-    <button type="submit" class="btn-login">SE CONNECTER</button>
-
-    <div class="alt-login">
-      <p>Ou continuer avec</p>
-      <button type="button" class="btn-google">Google</button>
-    </div>
-
-  </form>
-</section>
-
--->
 
   </main>
   <footer>
       <div class="newsletter">
-         <h3>Benintôché Newsletter</h3>
-         <p>Recevez nos dernières actualités et sessions interactives sur la culture et l'infrasture béninoise.</p>
-        <form action="/subscribe" method="POST">
-         <input type="email" name="email" placeholder="Votre adresse email" required>
-         <button type="submit">S'abonner</button>
-        </form>
+         <h3>Benintôché</h3>
+         <p>Préservons et partageons la richesse culturelle du Bénin</p>
       </div>
 
       <div class="footer-bottom">
@@ -143,6 +71,12 @@
          <a href="https://www.linkedin.com/in/tonprofil" target="_blank" aria-label="LinkedIn">
             <i class="fab fa-linkedin-in"></i>
          </a>
+         <a href="https://twitter.com/tonprofil" target="_blank" aria-label="twitter">
+            <i class="fab fa-x-twitter"></i>
+          </a>
+         <a href="https://youtube.com/tonprofil" target="_blank"aria-label="youtube">
+            <i class="fab fa-youtube"></i>
+          </a>
        </div>
 
   </footer>

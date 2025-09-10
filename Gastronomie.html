@@ -1,23 +1,87 @@
-html
 <!DOCTYPE html>
 <html lang="fr">
 <head>
   <meta charset="UTF-8">
   <title>Gastronomie</title>
-  <link rel="stylesheet" href="style.css">
+  <link rel="stylesheet" href="principal.css">
+  <link rel="stylesheet" href="Gastronomie.css">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css">
+  <link href="https://fonts.googleapis.com/css2?family=Manrope&family=Montserrat&display=swap" rel="stylesheet">
 </head>
 <body>
   <header>
     <h1>Gastronomie locale</h1>
-    <nav>...</nav>
+    <button class="menu-toggle" onclick="toggleMenu()">☰</button>
+    <nav class="navigation">
+
+      <a href="Accueil.html">Accueil</a>
+      <a href="Gastronomie.html">Gastronomie</a>
+      <a href="Infrastructures.html">Infrastructure</a>
+      <a href="Startups.html">Startups</a>
+      <a href="Tourisme_Histoire.html">Tourisme/Histoire</a>
+      <a href="#form-connexion" class="btn-login">Se connecter</a>
+      <a href="Contact.html">Contact</a>
+      <a href="A_propos.html">À propos</a>
+    </nav>
   </header>
   <main>
-    <section>
-      <h2>Saveurs et traditions</h2>
-      <p>Explorez les plats typiques, les spécialités régionales et les chefs emblématiques.</p>
+    <section class="section-gastronomie">
+      <h1>Saveurs locales</h1>
+      <p>
+       <em>Savourez l’âme du Bénin dans chaque bouchée.</em> <br>
+      De l’amiwo rouge éclatant à la douceur du gari, des sauces
+      parfumées aux boissons locales, la gastronomie béninoise 
+      est un festival de couleurs et de goûts. Plus qu’un repas,
+      c’est une expérience sensorielle, un voyage au cœur de nos
+      traditions culinaires… à déguster sans modération !
+        Explorez les plats typiques, les spécialités régionales. </p>
+      <h3> Présentation des plats typiques (amiwo, sauce arachide, akassa, tchoukoutou...)</h3> 
+      <div>
+        <img src="images/gastronomie.jpeg" alt="image cuisinier noir"> <br><br><br>
+        <img src="images/Akassa_jus_poisson.jpeg" alt="akassa"> <br><br><br>
+        <img src="images/Amiwô.jpeg" alt="amiwô"> <br><br><br>
+        <img src="images/Atta_tévi.jpeg" alt="Atta_tévi"> <br><br><br>
+        <img src="images/Pâte_noire.jpeg" alt="pate_noire"> <br><br><br>
+        <img src="images/Wassawassa.jpeg" alt="Wassawassa"> <br><br><br>
+        <img src="images/Pâte_blanche.jpeg" alt="Pâte_blanche"> <br><br><br>
+        <img src="images/Piron_rouge.jpeg" alt="Piron_rouge">
+
+      </div>
+     
+     
     </section>
   </main>
-  <footer>...</footer>
+<footer>
+      <div class="newsletter">
+         <h3>Benintôché</h3>
+         <p>Préservons et partageons la richesse culturelle du Bénin</p>
+      </div>
+
+      <div class="footer-bottom">
+        <p>&copy; 2025 Benintôché. Tous droits réservés.</p>
+      </div>
+      <div class="social-icons">
+         <a href="https://www.facebook.com/tonprofil" target="_blank" aria-label="Facebook">
+            <i class="fab fa-facebook-f"></i>
+         </a>
+         <a href="https://www.linkedin.com/in/tonprofil" target="_blank" aria-label="LinkedIn">
+            <i class="fab fa-linkedin-in"></i>
+         </a>
+         <a href="https://twitter.com/tonprofil" target="_blank" aria-label="twitter">
+            <i class="fab fa-x-twitter"></i>
+          </a>
+         <a href="https://youtube.com/tonprofil" target="_blank"aria-label="youtube">
+            <i class="fab fa-youtube"></i>
+          </a>
+       </div>
+
+  </footer>
+  <script>
+  function toggleMenu() {
+    const nav = document.querySelector('.navigation');
+    nav.classList.toggle('show');
+}
+</script>
 </body>
 </html>
 
