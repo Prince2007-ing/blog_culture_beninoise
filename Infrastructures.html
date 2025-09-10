@@ -3,21 +3,82 @@
 <head>
   <meta charset="UTF-8">
   <title>Infrastructure</title>
-  <link rel="stylesheet" href="style.css">
+  <link rel="stylesheet" href="principal.css">
+  <link rel="stylesheet" href="Infrastructures.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css">
 </head>
 <body>
   <header>
     <h1>Développement des infrastructures</h1>
-    <nav>...</nav>
+    <button class="menu-toggle" onclick="toggleMenu()">☰</button>
+    <nav class="navigation">
+
+      <a href="Accueil.html">Accueil</a>
+      <a href="Gastronomie.html">Gastronomie</a>
+      <a href="Infrastructures.html">Infrastructure</a>
+      <a href="Startups.html">Startups</a>
+      <a href="Tourisme_Histoire.html">Tourisme/Histoire</a>
+      <a href="#form-connexion" class="btn-login">Se connecter</a>
+      <a href="Contact.html">Contact</a>
+      <a href="A_propos.html">À propos</a>
+    </nav>
+
   </header>
   <main>
-    <section>
+    <section class="section-infrastructure">
       <h2>Transport, énergie et urbanisme</h2>
-      <p>Découvrez les projets structurants et les innovations en matière d'infrastructure.</p>
+      <p>
+        <em>Un pays en mouvement, tourné vers l’avenir.</em> <br>
+        Le Bénin construit aujourd’hui les fondations de demain :
+        routes modernes, aéroports internationaux, zones industrielles
+        et projets solaires ambitieux. Chaque infrastructure est une preuve
+        de dynamisme et d’ambition. Venez découvrir comment un pays en pleine
+        croissance façonne son futur. <br>
+        Découvrez les projets structurants et les innovations en matière d'infrastructure.</p>
+        <div>
+           
+            <img src="images/Cotonou, Benin (3).jpeg" alt=""><br><br><br>
+            <img src="images/Benin – Palais de la Marina, Cotonou (1).jpeg" alt=""><br><br><br>
+            <img src="images/Sofitel Cotonou Marina Hotel & Spa _ 5-star Hotel in Benin (1).jpeg" alt=""><br><br><br>
+            <img src="images/Sofitel Cotonou Marina Hôtel & Spa  La plus grande attraction en hôtellerie au Bénin (1).jpeg" alt=""><br><br><br>
+
+        </div>
     </section>
+
   </main>
-  <footer>...</footer>
+<footer>
+      <div class="newsletter">
+         <h3>Benintôché</h3>
+         <p>Préservons et partageons la richesse culturelle du Bénin</p>
+      </div>
+
+      <div class="footer-bottom">
+        <p>&copy; 2025 Benintôché. Tous droits réservés.</p>
+      </div>
+      <div class="social-icons">
+         <a href="https://www.facebook.com/tonprofil" target="_blank" aria-label="Facebook">
+            <i class="fab fa-facebook-f"></i>
+         </a>
+         <a href="https://www.linkedin.com/in/tonprofil" target="_blank" aria-label="LinkedIn">
+            <i class="fab fa-linkedin-in"></i>
+         </a>
+         <a href="https://twitter.com/tonprofil" target="_blank" aria-label="twitter">
+            <i class="fab fa-x-twitter"></i>
+          </a>
+         <a href="https://youtube.com/tonprofil" target="_blank"aria-label="youtube">
+            <i class="fab fa-youtube"></i>
+          </a>
+       </div>
+
+  </footer>
+  <script>
+  function toggleMenu() {
+    const nav = document.querySelector('.navigation');
+    nav.classList.toggle('show');
+}
+</script>
 </body>
+
 </html>
 
 

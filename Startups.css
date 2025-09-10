@@ -1,0 +1,17 @@
+.section-startups {
+  background: #f3e5f5;
+  padding: 30px;
+  border-radius: 8px;
+}
+
+.section-startups h2 {
+  color: #6a1b9a;
+  margin-bottom: 20px;
+}
+
+.startup-card {
+  border-left: 4px solid #6a1b9a;
+  padding: 10px 15px;
+  margin-bottom: 15px;
+  background: white;
+}

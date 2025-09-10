@@ -1,0 +1,22 @@
+.section-tourisme {
+  background: #fff3e0;
+  padding: 30px;
+  border-radius: 8px;
+}
+
+.section-tourisme h2 {
+  color: #ef6c00;
+  margin-bottom: 20px;
+}
+
+.site-touristique {
+  display: flex;
+  align-items: center;
+  margin-bottom: 20px;
+}
+
+.site-touristique img {
+  width: 200px;
+  border-radius: 8px;
+  margin-right: 20px;
+}

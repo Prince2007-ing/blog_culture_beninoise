@@ -3,20 +3,76 @@
 <head>
   <meta charset="UTF-8">
   <title>Tourisme & Histoire</title>
-  <link rel="stylesheet" href="style.css">
+  <link rel="stylesheet" href="principal.css">
+  <link rel="stylesheet" href="Tourisme_Histoire.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css">
 </head>
 <body>
   <header>
     <h1>Tourisme et patrimoine</h1>
-    <nav>...</nav>
+    <button class="menu-toggle" onclick="toggleMenu()">☰</button>
+    <nav class="navigation">
+
+      <a href="Accueil.html">Accueil</a>
+      <a href="Gastronomie.html">Gastronomie</a>
+      <a href="Infrastructures.html">Infrastructure</a>
+      <a href="Startups.html">Startups</a>
+      <a href="Tourisme_Histoire.html">Tourisme/Histoire</a>
+      <a href="#form-connexion" class="btn-login">Se connecter</a>
+      <a href="Contact.html">Contact</a>
+      <a href="A_propos.html">À propos</a>
+    </nav>
   </header>
   <main>
-    <section>
+    <section class="section-tourisme">
       <h2>Sites historiques et attractions</h2>
-      <p>Partez à la découverte des lieux emblématiques et de l’histoire locale.</p>
+      <p>
+        <em>Un pays, mille histoires, mille merveilles.</em> 
+        Laissez-vous charmer par la magie des palais royaux d’Abomey,
+        par l’émotion du port de non-retour à Ouidah, ou par la beauté
+        sauvage de la Pendjari. Le Bénin, c’est l’Afrique authentique,
+        vibrante et accueillante. Chaque site est une aventure, chaque 
+        lieu un souvenir. <br>
+        Partez à la découverte des lieux emblématiques et de l’histoire locale.</p>
+        <div>
+          <img src="images/Place des souvenirs - Cotonou.jpeg" alt=""><br><br><br>
+          <img src="images/place_goho.jpeg" alt=""><br><br><br>
+          <img src="images/temple_python.jpeg" alt=""><br><br><br>
+          <img src="images/Stade de l'amitié Cotonou-Bénin.jpeg" alt="Stade">
+        </div>
     </section>
   </main>
-  <footer>...</footer>
+ <footer>
+      <div class="newsletter">
+         <h3>Benintôché</h3>
+         <p>Préservons et partageons la richesse culturelle du Bénin</p>
+      </div>
+
+      <div class="footer-bottom">
+        <p>&copy; 2025 Benintôché. Tous droits réservés.</p>
+      </div>
+      <div class="social-icons">
+         <a href="https://www.facebook.com/tonprofil" target="_blank" aria-label="Facebook">
+            <i class="fab fa-facebook-f"></i>
+         </a>
+         <a href="https://www.linkedin.com/in/tonprofil" target="_blank" aria-label="LinkedIn">
+            <i class="fab fa-linkedin-in"></i>
+         </a>
+         <a href="https://twitter.com/tonprofil" target="_blank" aria-label="twitter">
+            <i class="fab fa-x-twitter"></i>
+          </a>
+         <a href="https://youtube.com/tonprofil" target="_blank"aria-label="youtube">
+            <i class="fab fa-youtube"></i>
+          </a>
+       </div>
+
+  </footer>
+  <script>
+  function toggleMenu() {
+    const nav = document.querySelector('.navigation');
+    nav.classList.toggle('show');
+}
+</script>
 </body>
 </html>
 
