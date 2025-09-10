@@ -1,4 +1,3 @@
-css
 /* ======= RESET ======= */
 * {
   margin: 0;
@@ -7,36 +6,49 @@ css
 }
 
 /* ======= BODY ======= */
+
+/* Fond global avec texture */
 body {
+  background-color: #f5f2e7; /* couleur beige inspirée de la texture */
   font-family: 'Segoe UI', sans-serif;
-  background-color: #f9f9f9;
+   /*background: url("images/Logo\ de\ Benintôché\ avec\ fond\ texturé.png") repeat, #fdfdfd; texture + couleur fallback */
   color: #333;
   line-height: 1.6;
   padding: 0 20px;
 }
 
 /* ======= HEADER ======= */
+
 header {
-  background-color: #007bff;
-  color: white;
+  background-color: #ffae00; /* bleu moderne du logo */
+  color: black;
   padding: 20px 0;
   text-align: center;
+   position: relative; /* important pour placer le bouton */
 }
+
 
 header h1 {
   margin-bottom: 10px;
   font-size: 28px;
 }
 
-nav {
+.logo {
+  font-weight: bold;
+  margin-bottom: 10px;
+  font-size: 30px;
+}
+
+/* ======= NAVIGATION ======= */
+.navigation {
   display: flex;
   justify-content: center;
   flex-wrap: wrap;
   gap: 15px;
 }
 
-nav a {
-  color: white;
+.navigation a {
+  color: black;
   text-decoration: none;
   font-weight: bold;
   padding: 8px 12px;
@@ -44,8 +56,8 @@ nav a {
   transition: background-color 0.3s ease;
 }
 
-nav a:hover {
-  background-color: #0056b3;
+.navigation a:hover {
+  background-color: white;
 }
 
 /* ======= MAIN ======= */
@@ -53,67 +65,122 @@ main {
   max-width: 1000px;
   margin: 30px auto;
   padding: 20px;
-  background-color: white;
+  background-color: rgb(238, 204, 130);
   border-radius: 8px;
   box-shadow: 0 0 10px rgba(0,0,0,0.05);
 }
 
 main h2 {
   margin-bottom: 15px;
-  color: #007bff;
+  color: black;
 }
 
-main p {
-  margin-bottom: 10px;
+/* ======= FORM ======= */
+#form-connexion {
+  background-color: #f9f9f9;
+  padding: 20px;
+  margin-top: 40px;
+  border-radius: 8px;
+  max-width: 400px;
+  box-shadow: 0 0 10px rgba(0,0,0,0.1);
 }
 
-/* ======= FORMULAIRES ======= */
-form {
-  display: flex;
-  flex-direction: column;
-  gap: 10px;
-}
-
-input, textarea, button {
+#form-connexion input {
+  width: 100%;
   padding: 10px;
+  margin-bottom: 15px;
   border: 1px solid #ccc;
   border-radius: 4px;
 }
 
-button {
-  background-color: #007bff;
+#form-connexion button {
+  background-color: #009639;
+  color: white;
+  padding: 10px 15px;
+  border: none;
+  border-radius: 4px;
+  cursor: pointer;
+}
+/* Boutons et accents */
+button, .btn-login {
+  background-color: #009639; /* vert du drapeau */
   color: white;
   border: none;
+  padding: 10px 15px;
+  border-radius: 4px;
   cursor: pointer;
 }
 
-button:hover {
-  background-color: #0056b3;
+ #form-connexion button:hover, .btn-login:hover {
+  background-color: #023b18;
 }
 
 /* ======= FOOTER ======= */
 footer {
+  background-color: black; /* jaune du drapeau */
+  color: #333;
   text-align: center;
   padding: 20px;
-  background-color: #eee;
+  font-weight: bold;
   margin-top: 40px;
   font-size: 14px;
 }
 
-/* ======= RESPONSIVE ======= */
-@media (max-width: 600px) {
-  nav {
-    flex-direction: column;
-    align-items: center;
+.site-footer {
+  background-color: black;
+  padding: 40px 20px;
+  text-align: center;
+  font-family: Arial, sans-serif;
+  color: #333;
 }
 
-  main {
-    padding: 15px;
+.newsletter h3 {
+  margin-bottom: 10px;
+  font-size: 1.4em;
+  color: #6a1b9a;
 }
+
+.newsletter p {
+  margin-bottom: 20px;
+  font-size: 1em;
+}
+
+.newsletter form {
+  display: flex;
+  justify-content: center;
+  gap: 10px;
+  flex-wrap: wrap;
+}
+
+.newsletter input[type="email"] {
+  padding: 10px;
+  width: 250px;
+  border: 1px solid #ccc;
+  border-radius: 4px;
+}
+
+.newsletter button {
+  padding: 10px 20px;
+  background-color: #6a1b9a;
+  color: white;
+  border: none;
+  border-radius: 4px;
+  cursor: pointer;
+}
+
+.newsletter button:hover {
+  background-color: #4a148c;
+}
+
+.footer-bottom {
+  margin-top: 30px;
+  font-size: 0.9em;
+  color: #666;
 }
 
 
-/* Menu toggle button */
+
+/* ======= MENU TOGGLE ======= */
 .menu-toggle {
   display: none;
   font-size: 28px;
@@ -121,42 +188,194 @@ footer {
   border: none;
   color: white;
   cursor: pointer;
+  position: absolute;
+  top: 20px;
+  right: 20px;
 }
 
-/* Navigation par défaut */
-.navigation {
-  display: flex;
-  gap: 15px;
-}
-
-/* Responsive menu */
+/* ======= RESPONSIVE ======= */
 @media (max-width: 768px) {
-.menu-toggle {
-    display: block;
-    position: absolute;
-    top: 20px;
-    right: 20px;
-}
-.navigation {
+  .navigation {
     display: none;
     flex-direction: column;
     background-color: #007bff;
     position: absolute;
-    top: 60px;
+    top: 70px;
     right: 20px;
     padding: 10px;
     border-radius: 8px;
-}
+  }
 
-.navigation.show {
+  .navigation.show {
     display: flex;
-}
+  }
 
-  nav a {
-    color: white;
+  .menu-toggle {
+    display: block;
+  }
+
+  .navigation a {
     padding: 10px;
     border-bottom: 1px solid rgba(255,255,255,0.2);
+  }
 }
+
+
+
+
+
+/* --- Modale cachée par défaut --- */
+.modal {
+  display: none;
+  position: fixed;
+  top: 0; left: 0;
+  width: 100%; height: 100%;
+  background: rgba(0,0,0,0.6);
+  justify-content: center;
+  align-items: center;
+  z-index: 1000;
+}
+
+/* Quand la modale est ciblée */
+.modal:target {
+  display: flex;
+}
+
+/* --- Contenu --- */
+.modal-content {
+  background: white;
+  padding: 30px;
+  border-radius: 10px;
+  width: 90%;
+  max-width: 400px;
+  box-shadow: 0 0 20px rgba(0,0,0,0.3);
+  position: relative;  /* nécessaire pour placer la croix */
+  animation: fadeIn 0.3s ease;
+}
+
+.modal-content h2 {
+  margin-bottom: 20px;
+  color: #007bff;
+}
+
+/* Inputs et bouton */
+.modal-content input {
+  width: 100%;
+  padding: 10px;
+  margin-bottom: 15px;
+  border: 1px solid #ccc;
+  border-radius: 5px;
+}
+
+.modal-content button {
+  width: 100%;
+  padding: 10px;
+  background: #007bff;
+  border: none;
+  border-radius: 5px;
+  color: white;
+  font-weight: bold;
+  cursor: pointer;
+}
+
+.modal-content button:hover {
+  background: #0056b3;
+}
+
+/* --- Croix de fermeture --- */
+.btn-close {
+  position: absolute;
+  top: 10px;
+  right: 15px;
+  font-size: 20px;
+  text-decoration: none;
+  color: #333;
+  font-weight: bold;
+}
+
+.btn-close:hover {
+  color: red;
+}
+
+/* --- Animation --- */
+@keyframes fadeIn {
+  from { transform: scale(0.9); opacity: 0; }
+  to { transform: scale(1); opacity: 1; }
+}
+
+/* --- Les icônes reseaux sociaux--- */
+.social-icons {
+  margin-top: 20px;
+}
+
+.social-icons a {
+  margin: 0 10px;
+  font-size: 24px;
+  color: #333;
+  text-decoration: none;
+  transition: color 0.3s ease;
+}
+
+.social-icons a:hover {
+  color: #0077b5; /* LinkedIn bleu */
+}
+
+.social-icons a:first-child:hover {
+  color: #3b5998; /* Facebook bleu */
+}
+
+
+
+
+.tab-container {
+  max-width: 400px;
+  margin: auto;
+  background: #fff;
+  padding: 20px;
+  border-radius: 8px;
+}
+
+.tabs {
+  display: flex;
+  justify-content: space-around;
+  margin-bottom: 20px;
+}
+
+.tab {
+  text-decoration: none;
+  padding: 10px 20px;
+  background: #eee;
+  border-radius: 4px;
+  color: #333;
+}
+
+.tab:hover {
+  background: #ddd;
+}
+
+.tab-content {
+  display: none;
+}
+
+.tab-content:target {
+  display: block;
+}
+
+input {
+  width: 100%;
+  padding: 8px;
+  margin-bottom: 15px;
+  border: 1px solid #ccc;
+  border-radius: 4px;
+}
+
+button {
+  background-color: #6a1b9a;
+  color: white;
+  padding: 10px;
+  border: none;
+  border-radius: 4px;
+  cursor: pointer;
 }
 
 

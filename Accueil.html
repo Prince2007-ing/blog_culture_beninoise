@@ -4,19 +4,24 @@
   <meta charset="UTF-8">
   <title>Accueil</title>
   <link rel="stylesheet" href="style.css">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+
 </head>
 
 <body>
   <header>
      <h1>Bienvenue sur notre site</h1>
-    <div class="logo">Robbie Lens</div>
+    <div class="logo">Benintôché
+    </div>
     <button class="menu-toggle" onclick="toggleMenu()">☰</button>
     <nav class="navigation">
+
       <a href="Accueil.html">Accueil</a>
       <a href="Gastronomie.html">Gastronomie</a>
       <a href="Infrastructures.html">Infrastructure</a>
       <a href="Startups.html">Startups</a>
       <a href="Tourisme_Histoire.html">Tourisme/Histoire</a>
+      <a href="#form-connexion" class="btn-login">Se connecter</a>
       <a href="Contact.html">Contact</a>
       <a href="A_propos.html">À propos</a>
     </nav>
@@ -26,9 +31,120 @@
       <h2>Présentation générale</h2>
       <p>Découvrez notre univers à travers les différentes thématiques proposées.</p>
     </section>
+
+<!-- Fenêtre modale 
+<div id="form-connexion" class="modal">
+  <div class="modal-content">
+    <a href="#" class="btn-close">✖</a> 
+    <h2>Connexion</h2>
+    <form action="/login" method="POST">
+      <label for="email">Email :</label>
+      <input type="email" id="email" name="email" required>
+
+      <label for="password">Mot de passe :</label>
+      <input type="password" id="password" name="password" required>
+
+      <button type="submit">Connexion</button>
+    </form>
+  </div>
+
+
+
+
+<div class="tab-container">
+  <div class="tabs">
+    <a href="#login" class="tab">SE CONNECTER</a>
+    <a href="#signup" class="tab">S'INSCRIRE</a>
+  </div>
+
+  <div id="login" class="tab-content">
+    <h3>Connexion</h3>
+    <form action="/login" method="POST">
+      <label>Email:</label>
+      <input type="email" name="email" required>
+      <label>Mot de passe:</label>
+      <input type="password" name="password" required>
+      <button type="submit">Se connecter</button>
+      <a href="#" class="forgot-password">Mot de passe oublié?</a>
+    </form>
+  </div>
+
+  <div id="signup" class="tab-content">
+    <h3>Inscription</h3>
+    <form action="/register" method="POST">
+      <label>Nom complet:</label>
+      <input type="text" name="fullname" required>
+      <label>Email:</label>
+      <input type="email" name="email" required>
+      <label>Mot de passe:</label>
+      <input type="password" name="password" required>
+      <button type="submit">S'inscrire</button>
+
+      <div class="alt-login">
+      <p>Ou continuer avec</p>
+      <button type="button" class="btn-google">Google</button>
+    </div>
+    </form>
+
+  </div>
+</div>
+
+
+
+
+
+
+
+
+
+
+<section id="form-connexion">
+  <h2>Connexion</h2>
+  <form action="/login" method="POST">
+    <label for="email">Email:</label>
+    <input type="email" id="email" name="email" required>
+
+    <label for="password">Mot de passe:</label>
+    <input type="password" id="password" name="password" required>
+
+    <button type="submit">Connexion</button>
+        <a href="#" class="forgot-password">Mot de passe oublié?</a>
+
+    <button type="submit" class="btn-login">SE CONNECTER</button>
+
+    <div class="alt-login">
+      <p>Ou continuer avec</p>
+      <button type="button" class="btn-google">Google</button>
+    </div>
+
+  </form>
+</section>
+
+-->
+
   </main>
   <footer>
-    <p>&copy; 2025 - Tous droits réservés</p>
+      <div class="newsletter">
+         <h3>Benintôché Newsletter</h3>
+         <p>Recevez nos dernières actualités et sessions interactives sur la culture et l'infrasture béninoise.</p>
+        <form action="/subscribe" method="POST">
+         <input type="email" name="email" placeholder="Votre adresse email" required>
+         <button type="submit">S'abonner</button>
+        </form>
+      </div>
+
+      <div class="footer-bottom">
+        <p>&copy; 2025 Benintôché. Tous droits réservés.</p>
+      </div>
+      <div class="social-icons">
+         <a href="https://www.facebook.com/tonprofil" target="_blank" aria-label="Facebook">
+            <i class="fab fa-facebook-f"></i>
+         </a>
+         <a href="https://www.linkedin.com/in/tonprofil" target="_blank" aria-label="LinkedIn">
+            <i class="fab fa-linkedin-in"></i>
+         </a>
+       </div>
+
   </footer>
   <script>
   function toggleMenu() {
